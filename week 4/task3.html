@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK3</title>
+</head>
+<style>
+
+    .main1{
+        min-width: 100%;
+        background-color: gray;
+    }
+    .value-div{
+        display: flex;
+    
+        
+    }
+
+    .second-div{
+        text-align: center;
+        line-height: 2;
+    }
+    .second-div h3{
+
+        margin-top: 0;
+        padding-top: 0;
+    }
+    button{
+        border-radius: 5px;
+    }
+
+
+
+
+    .main2{
+            margin:auto;
+            width:55%;
+            border: 1px solid;
+            padding:20px;
+            margin-top: 50px;
+          
+        
+        }
+        .heading-div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+
+
+        .inputLine label{
+            width:150px;
+            display: inline-block;
+        }
+
+        .inputLine{
+            display: flex;
+       
+            flex: 1;
+            align-items: center;
+            width: 80%;
+            padding:10px;
+            
+        }
+        input,  select{
+            flex: 1;
+            
+        }
+        select{
+            margin-right: 3px;
+        }
+ 
+
+        .internal-inputLine-div{
+            width:60%;
+            flex:1;
+            display: flex;
+            align-items: center;
+        }
+        .para{
+            width:60%;
+            margin-left: 160px;
+            margin-bottom: 15px;
+
+      
+        }
+        #about{
+            height:80px;
+        }
+        #aboutLabel{
+            align-self: flex-start;
+        }
+        .para p{
+            margin:0;
+        }
+
+
+        .button{
+            position: relative;
+            top:10px;
+            left:80%;
+            height:25px;
+        }
+   
+
+
+
+
+</style>
+<body>
+    <div class="main1">
+        <form action="">
+        <div class="value-div">
+        <label for="value">Value</label>
+        
+        <textarea  rows="5" cols="200" type="text" id="value", name="value"> </textarea>
+    </div>
+
+    <div class="second-div">
+        <h3>One numerical expression or loop per line. Example: x=3;x=n(x);c<=100;x-1</h3>
+        <div class="line">
+        <button>Only evaluate</button>
+        <button>Prime</button>
+        <button>Factor</button>
+        <button>Help</button>
+    </div>
+    <div class="line">
+        <button>Config</button>
+        <button>Wizard</button>
+        <button>From file</button>
+        <button>Blockly mode</button>
+    </div>
+    <div class="line">
+        <label for="category">Function Category</label>
+        <select name="category" id="category">
+            <option value="Basic-Math">Basic Math</option>
+        </select>
+    </div>
+    <div class="line">
+        <button>(</button>
+        <button>)</button>
+        <button>+</button>
+        <button>-</button>
+        <button>*</button>
+        <button>/</button>
+        <button>%</button>
+        <button>^</button>
+        <button>sqrt(</button>
+        <button>Random(</button>
+        <button>Abs(</button>
+        <button>Sign(</button>
+    </div>
+    </div>
+</form>
+    </div>
+    <div class="main2">
+        <form action="#">
+        <div class="heading-div">
+            <h1>Edit Profile</h1>
+        </div>
+        <hr>
+        <div class="inputs-div">
+            <div class="inputLine">
+                <label for="photo">Your profile photo</label>
+                <div class="internal-inputLine-div">
+                    <input type="text" name="photoName" id="photo">
+                    <input type="file"  name="photoFile" id="photo">
+                </div>
+            </div>
+            
+            <div class="inputLine">
+                <label for="fname">Your first name</label>
+                
+                    <input type="text" name="fname" id="fname">
+             
+            </div>
+            <div class="inputLine">
+                <label for="lname">Your last name</label>
+                
+                    <input type="text" name="lname" id="lname">
+             
+            </div>
+            <div class="inputLine">
+                <label for="gender">Gender</label>
+                
+                    <label for="female"><input type="radio" name="gender" id="gender" value="female">female</label>
+                    <label for="male"><input type="radio" name="gender" id="gender" value="male">male</label>
+             
+            </div>
+            
+            <div class="inputLine">
+                <label for="birthDate">Birth Date</label>
+                <div class="internal-inputLine-div">
+                    <select for="month"  size="1" multiple>
+                        <option value="month">month</option>
+                    </select>
+        
+                    <select name="day" size="1" multiple>
+                        <option value="day">day</option>
+                    </select>
+         
+                    <select name="year" size="1" multiple>
+                        <option value="year">year</option>
+                    </select>
+           
+    
+                 </div>
+                
+           
+           
+            
+            </div>
+            <div class="para"><p class="deafulthidden">This is hidden by default from your profile.</p></div>
+
+            <div class="inputLine">
+                <label id="aboutLabel" for="about">About You</label>
+                
+               <input id="about" type="text" name="about" id="about">
+            </div>
+
+            <div class="inputLine">
+                <label for="url">Your web site url</label>
+               <input type="text" name="url" id="url"  >
+            </div>
+            <div class="inputLine">
+                <label for="webName">Your web site name</label>
+               <input type="text" name="webName" id="webName"  >
+            </div>
+            
+
+        </div>
+        <button class="button" type="submit">Create Profile ></button>
+</form>
+    </div>
+
+</body>
+</html>

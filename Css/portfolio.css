@@ -1,0 +1,67 @@
+.navbar-brand {
+    border-radius: 50%;
+}
+
+body::before {
+    display: block;
+    content: "";
+    height: 90px;
+}
+
+.alter:hover {
+    background-color: #0b5ed7;
+    color: black;
+    font-weight: 500;
+    box-shadow: 5px 7px 18px grey;
+}
+
+.getit {
+    padding: 0;
+    margin: 0;
+    font-family: fantasy;
+}
+
+.trans {
+    background-color: #0b5ed7;
+    width: 100%;
+}
+
+.chng a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #a0a0a0;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+.chng a:after {
+    content: "";
+    position: absolute;
+    background-color: #0b5ed7;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.chng a:hover::after {
+    width: 100%;
+}
+
+.blink {
+    animation-name: blinke;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blinke {
+    0% {
+        color: black;
+    }
+    100% {
+        color: white;
+    }
+}

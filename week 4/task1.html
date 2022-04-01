@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <style>
+        .main{
+            margin:auto;
+            width:55%;
+            border: 1px solid;
+            padding:20px;
+          
+        
+        }
+        .heading-div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .heading-div p{
+            align-self: flex-end;  
+        }
+        .text{
+            margin-right: 20px;
+        }
+
+
+        .inputLine label{
+            width:150px;
+            display: inline-block;
+        }
+        .link{
+            display: inline-block;
+        }
+        .inputLine{
+            display: flex;
+       
+            flex: 1;
+            align-items: center;
+            width: 85%;
+            padding:10px;
+            
+        }
+        input,  select{
+            flex: 1;
+            
+        }
+        select{
+            margin-right: 3px;
+        }
+ 
+
+        .internal-inputLine-div{
+            width:60%;
+            flex:1;
+            display: flex;
+            align-items: center;
+        }
+        .para{
+            width:60%;
+            margin-left: 160px;
+            margin-bottom: 15px;
+
+      
+        }
+        .para p{
+            margin:0;
+        }
+
+        #check{
+            
+            flex:1;
+            margin-left: 150px;
+        }
+        button{
+            position: relative;
+            left:80%;
+            height:25px;
+        }
+   
+
+    </style>
+</head>
+<body>
+    <main class="main">
+        <form action="#">
+    <div class="heading-div">
+        <h1>Sign Up</h1>
+        <p>Already a member? <a href="#">Log in</a></p>
+    </div>
+    <hr>
+    <div class="inputs-div">
+        <p class="text">Hi there! We're excited to havw you as a part of our community. To get started, please create an account.</p>
+        <div class="inputLine">
+            <label for="email">Your email address</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="inputLine">
+            <label for="password">Create password</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <div class="inputLine">
+            <label for="confirmPassword">Create password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword">
+        </div>
+        <div class="inputLine">
+            <label for="link">Your Profile Link</label>
+            <div class="internal-inputLine-div">
+            <p class="link">fitandawesome.com/</p>
+            <input type="text" id="link" name="link">
+        </div>
+
+        </div>
+        <div class="inputLine">
+            <label for="birthDate">Birth Date</label>
+
+            <div class="internal-inputLine-div">
+                <select for="month"  size="1" multiple>
+                    <option value="month">month</option>
+                </select>
+                <!-- <input type="date" id="month" name="month"> -->
+                <select name="day" size="1" multiple>
+                    <option value="day">day</option>
+                </select>
+                <!-- <input type="month" id="day" name="day"> -->
+                <select name="year" size="1" multiple>
+                    <option value="year">year</option>
+                </select>
+                <!-- <input type="date" id="year" name="year"> -->
+                
+                
+             </div>
+             
+        
+        
+        </div>
+        <div class="para"><p class="deafulthidden">This is hidden by default from your profile.</p></div>
+        
+       
+        <div class="inputLine">
+            <label id="check" for="agree"><input type="checkbox" name="agree" id="agree">I have read and agree to the T.O.S.</label>
+        </div>
+    </div>
+    <button type="submit">Create Profile ></button>
+</form>
+</main>
+</body>
+</html>
